@@ -95,6 +95,10 @@ export const getWeekDay = (locale: string) => {
   if (locale.startsWith('zh')) {
     return ['日', '一', '二', '三', '四', '五', '六'];
   }
+  
+  if (locale.startsWith('pt')){
+    return ['Dom','Seg','Ter','Qua','Qui','Sex','Sab'];
+  }
 
   return ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 };
